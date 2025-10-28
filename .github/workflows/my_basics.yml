@@ -6,13 +6,13 @@ on:
             -master
 jobs:   
   my_testing:
-   run-on: ubuntu-latest
+   runs-on: ubuntu-latest
    steps:
      name: Print Hello Message
      run: echo "Hello world from Testing job"
      
   my_deploy:
-   run-on: ubuntu-latest
-   steps:
-     name: Print Hello Message
-     run: echo "Hello world from Deploy job"
+   runs-on: ubuntu-latest 
+    steps:
+        name: Print Hello Message
+        run: echo "Hello world from Deploy job"
